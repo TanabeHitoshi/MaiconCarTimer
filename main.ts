@@ -1,3 +1,9 @@
+input.onButtonPressed(Button.A, function () {
+    state_1 = 9
+})
+input.onButtonPressed(Button.B, function () {
+    state_2 = 9
+})
 let Time100_2 = 0
 let Time10_2 = 0
 let Time1s_2 = 0
@@ -12,8 +18,10 @@ let Time10s_1 = 0
 let Time1m_1 = 0
 let Time10m_1 = 0
 let Time_1 = 0
-let state_1 = 1
-let state_2 = 1
+let state_2 = 0
+let state_1 = 0
+state_1 = 1
+state_2 = 1
 basic.forever(function () {
     Time_1 = input.runningTime()
     serial.writeValue("Time_1", Time_1)
